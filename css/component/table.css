@@ -1,0 +1,40 @@
+
+table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table tr {
+    height: 48px;
+}
+
+table tbody tr:hover {
+    background-color: rgb(238, 238, 238) !important;
+}
+
+table th, td {
+    border-bottom: 1px solid #cacaca;
+}
+
+table th + th, table td + td {
+    padding-right: 10px;
+}
+
+.thead__icon {
+    padding-left: 8px;
+    color: #cacaca;
+    font-size: 12px;
+}
+
+.table-firstColumn {
+    width: 42px;
+    box-sizing: border-box;
+    padding: 3px 10px 0 16px;
+    cursor: pointer;
+}
+
+.table-secondColumn {
+    width: 18px;
+}

@@ -1,0 +1,165 @@
+
+/*---------------- Nút thêm mới ---------------*/
+.body__content__add {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+/*----------- Nút refresh ---------------*/
+.body__content__refresh {
+    position: absolute;
+    top: 63px;
+    right: 16px;
+    width: 40px;
+    height: 35px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    background-image: url(../../assets/icon/refresh.png);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.body__content__refresh:active {
+    background-color: #e9e9e9;
+}
+
+/*----------------- Label ----------------*/
+.body__content__label {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/*------------------- Input and search ----------------*/
+.body__content__search, .body__content__search__select {
+    display: flex;
+}
+
+/*----------------- Phan chon phong ban, vi tri ----------------------*/
+.body__content__search__group {
+    position: relative;
+}
+
+.body__content__search__select {
+    min-width: 200px;
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.b-c-s-select__icon {
+    height: 100%;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+}
+
+.b-c-s-select__icon:active {
+    background-color: #d8d8d8;
+}
+
+/*-------------------- Chon vao phong ban hoac vi tri se xo ra cac tuy chon --------------------*/
+.b-c-s__select__list {
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    width: 100%;
+    padding: 4px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.b-c-s__select__list__item {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.b-c-s__select__list__item:hover {
+    background-color: #e5e5e5;
+}
+
+/*---------------- phần đang được chọn -----------------*/
+#b-c-s-s-list__item--default-1, #b-c-s-s-list__item--default-2 {
+    padding-left: 0;
+    background-color: #019160;
+    color: #fff;
+}
+
+/*-------------- Table ----------------*/
+.body__content__table {
+    height: calc(100% - 30px - 20px - 40px - 8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.b-c-t-table {
+    height: calc(100% - 30px - 20px);
+    overflow: auto;
+}
+
+.body__content__table .b-c-t-table table {
+    width: 100%;
+}
+
+.body__content__table .b-c-t-table table thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.body__content__table .b-c-t-table table tbody tr:nth-child(even) {
+    background-color: #89898910;
+}
+
+.b-c-t-table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.b-c-t-table::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #0004;
+    /* visibility: hidden; */
+}
+
+/* .b-c-t-table:hover:-webkit-scrollbar-thumb {
+    visibility: visible;
+} */
+
+
+
+/*-------------- phan chuyen trang ---------------*/
+.body__content__table__page-navigations {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------------- Hiển thị 1-20...; 20 lao động/trang -------------------*/
+.b-c-t-page-navigations__left, .b-c-t-page-navigations__right {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.b-c-t-page-navigations__right {
+    justify-content: end;
+    width: 161px;
+    cursor: pointer;
+}

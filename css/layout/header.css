@@ -1,0 +1,126 @@
+
+/*------------------ Header -------------------*/
+.header {
+    display: flex;
+}
+
+/*---------------------- Logo header -----------------------*/
+.header__logo {
+    width: 226px;
+    height: 100%;
+    display: flex;
+    border-right: 1px solid #d8d8d8;
+}
+
+.header__logo-1 {
+    width: calc(16px + 24px + 10px);
+    height: 100%;
+    background-image: url(../../assets/img/toggle.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+.header__logo-2 {
+    width: calc(226px - 16px - 24px - 10px);
+    height: 100%;
+    background-image: url(../../assets/img/cukcuk-logo.png);
+    background-size: 124px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+/*------------------- Phần điều hướng header --------------------*/
+.header__control {
+    width: calc(100% - 226px);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+/*----------------------- Phần chi nhánh -----------------------*/
+.header__control__left {
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+}
+
+.header__control__left div + div {
+    margin-left: 10px;
+}
+
+.h-c-left__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: rgb(219 214 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(102, 87, 167);
+}
+
+.h-c-left__content {
+    font-weight: 700;
+}
+
+.h-c-left__icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.h-c-left__icon:hover {
+    background-color: #d8d8d8;
+}
+
+.h-c-left__icon:active {
+    background-color: #bcbcbc;
+}
+
+/*------------------- Phần avatar, thông báo -----------------*/
+.header__control__right {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.header__control__right div + div {
+    margin-left: 16px;
+}
+
+.h-c-right__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(../../assets/icon/avatar-default.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.h-c-right__option {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-c-right__option:active {
+    background-color: #d8d8d8;
+}
+
+.h-c-right__notify {
+    cursor: pointer;
+}
+
+.h-c-right__notify i:active {
+    font-weight: 800;
+}

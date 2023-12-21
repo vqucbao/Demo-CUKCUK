@@ -1,0 +1,170 @@
+
+/* pop-up canh bao */
+#pop-up-form-add {
+    position: fixed;
+    display: flex;
+    /* sau muon cho pop-up hien thi o dau thi sua o day */
+}
+
+.pop-up {
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    max-width: 420px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.pop-up__close {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up__close:hover {
+    background-color: #e2e2e2;
+}
+
+.pop-up__title {
+    margin: 24px 0 24px 24px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.pop-up__msg {
+    display: flex;
+    margin: 0 24px 24px;
+}
+
+.pop-up__msg .pop-up__msg__icon {
+    width: 49px;
+    height: 33px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #e2e2e2;
+    display: flex;
+}
+
+.pop-up__control {
+    background-color: #f3f3f3;
+    display: flex;
+    height: 60px;
+    justify-content: end;
+}
+
+.pop-up__control div {
+    height: 40px;
+    background-color: #fff;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pop-up__control .pop-up__control__reject {
+    margin-right: 10px;
+    width: 100px;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up__control .pop-up__control__reject:hover {
+    background-color: #e2e2e2;
+}
+
+.pop-up__control .pop-up__control__agree {
+    width: 80px;
+    margin-right: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* modifier danger*/
+
+.pop-up--danger .pop-up__msg__icon {
+    color: #ff4747;
+}
+
+.pop-up--danger .pop-up__control__agree {
+    background-color: #ff4747;
+}
+
+.pop-up--danger .pop-up__control__agree:hover {
+    background-color: #fe6a6a;
+}
+
+/* modifier warning*/
+
+.pop-up--warning .pop-up__msg__icon {
+    color: rgb(249, 175, 79);
+}
+
+.pop-up--warning .pop-up__control__agree {
+    background-color: #019160;
+}
+
+.pop-up--warning .pop-up__control__agree:hover {
+    background-color: #2fbe8e;
+}
+
+/*--------------------------- pop-up form them moi ------------------------------*/
+
+.pop-up-form-add {
+    width: 400px;
+}
+
+.pop-up-form-add__time {
+    display: flex;
+    margin: 0 24px 24px;
+    justify-content: space-between;
+}
+
+.pop-up-form-add__time .pop-up-form-add__time__release, .pop-up-form-add__time__hieuLuc {
+    flex-basis: calc(50% - 8px);
+}
+
+.pop-up-form-add .pop-up-form-add__input {
+    margin: 0 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pop-up-form-add .pop-up-form-add__input .pop-up-form-add__input__data, .pop-up-form-add .pop-up-form-add__time input {
+    height: 36px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    width: 100%;
+    padding-left: 16px;
+}
+
+.pop-up-form-add__time div + div {
+    margin-left: 16px;
+}
+
+.pop-up-form-add .pop-up-form-add__input .pop-up-form-add__input__label {
+    margin-bottom: 4px;
+}
+
+.pop-up-form-add .pop-up-form-add__time .pop-up-form-add__time__release div, .pop-up-form-add .pop-up-form-add__time .pop-up-form-add__time__hieuLuc div {
+    margin-top: 4px;
+}
+
+.pop-up-form-add .pop-up-form-add__input .pop-up-form-add__input__data::placeholder {
+    color: #c8c8c8;
+}
+

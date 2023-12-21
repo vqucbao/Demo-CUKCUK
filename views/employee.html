@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/page/employee.css">
+</head>
+<body>
+
+    <!--phần tìm kiếm, header-->
+    <div class="header">
+        <div class="header__logo">
+            <div class="header__logo-1"></div>
+            <div class="header__logo-2"></div>
+        </div>
+        <div class="header__control">
+            <div class="header__control__left">
+                <div class="h-c-left__logo">MB</div>
+                <div class="h-c-left__content">Chi nhánh MISA miền Bắc</div>
+                <div class="h-c-left__icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div class="header__control__right">
+                <div class="h-c-right__notify">
+                    <i style="font-size: 20px;" class="fa-regular fa-bell"></i>
+                </div>
+                <div class="h-c-right__avatar"></div>
+                <div class="h-c-right__name">Mai Anh Bảo</div>
+                <div class="h-c-right__option">
+                    <i style="font-size: 16px;" class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--phần body-->
+    <div class="body">
+
+        <!--phần điều hướng-->
+        <div class="body__navbar">
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon"></div>
+                <div class="b-n-item__text">Hồ sơ điện tử</div>
+            </div>
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon b-n-item__icon--2"></div>
+                <div class="b-n-item__text">Hồ sơ giấy</div>
+            </div>
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon b-n-item__icon--3"></div>
+                <div class="b-n-item__text">Theo dõi chi</div>
+            </div>
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon b-n-item__icon--4"></div>
+                <div class="b-n-item__text">Theo dõi đóng</div>
+            </div>
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon b-n-item__icon--5"></div>
+                <div class="b-n-item__text">Quản lí lao động</div>
+            </div>
+            <div class="body__navbar__item">
+                <div class="b-n-item__icon b-n-item__icon--6"></div>
+                <div class="b-n-item__text">Thiết lập</div>
+            </div>
+            <div class="body__navbar__control"></div>
+        </div>
+
+        <!--phần hiển thị danh sách nhân viên-->
+        <div class="body__content">
+            <div class="body__content__add">
+                <button class="m-btn m-btn-icon m-btn-icon--lapHoSo">Thêm nhân viên</button>
+            </div>
+            <div class="body__content__refresh"></div>
+            <div class="body__content__label">Danh sách nhân viên</div>
+            <div class="body__content__search">
+                <input style="margin-right: 16px;" type="text" class="m-input-icon" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại">
+                <div style="margin-right: 24px;" class="body__content__search__group">
+                    <div class="body__content__search__select">
+                        <p id="b-c-s-select--default-1">Tất cả phòng ban</p>
+                        <div class="b-c-s-select__icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="b-c-s__select__list">
+                        <div id="b-c-s-s-list__item--default-1" class="b-c-s__select__list__item">
+                            <i style="padding: 0 8px 0 20px;" class="fa-solid fa-check"></i>
+                            <p>Tất cả phòng ban</p>
+                        </div>
+                        <div class="b-c-s__select__list__item">Phòng nhân sư</div>
+                        <div class="b-c-s__select__list__item">Phòng kĩ thuật</div>
+                        <div class="b-c-s__select__list__item">Phòng dev</div>
+                        <div class="b-c-s__select__list__item">Phòng kế toán</div>
+                    </div>
+                </div>
+                <div class="body__content__search__group">
+                    <div class="body__content__search__select">
+                        <p id="b-c-s-select--default-2">Tất cả vị trí</p>
+                        <div class="b-c-s-select__icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="b-c-s__select__list">
+                        <div id="b-c-s-s-list__item--default-2" class="b-c-s__select__list__item">
+                            <i style="padding: 0 8px 0 20px;" class="fa-solid fa-check"></i>
+                            <p>Tất cả phòng ban</p>
+                        </div>
+                        <div class="b-c-s__select__list__item">HR</div>
+                        <div class="b-c-s__select__list__item">Mentor</div>
+                        <div class="b-c-s__select__list__item">Nhân viên</div>
+                        <div class="b-c-s__select__list__item">Leader</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--bảng hiển thị danh sách nhân viên-->
+            <div class="body__content__table">
+                <div class="b-c-t-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã nhân viên</th>
+                                <th>Họ và tên</th>
+                                <th>Giới tính</th>
+                                <th class="center">Ngày sinh</th>
+                                <th>Điện thoại</th>
+                                <th>Email</th>
+                                <th>Chức vụ</th>
+                                <th>Phòng ban</th>
+                                <th class="right">Mức lương cơ bản</th>
+                                <th>Tình trạng công việc</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>
+                                <td>Vũ Quốc Bảo</td>
+                                <td>Nam</td>
+                                <td class="center">11/08/2001</td>
+                                <td>0383239054</td>
+                                <td>vu.quoc.bao.21@gmail.com</td>
+                                <td>Dev</td>
+                                <td>Kĩ thuật</td>
+                                <td class="right">3.000.000VNĐ</td>
+                                <td>Đang làm việc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--phần điều hướng và chuyển trang-->
+                <div class="body__content__table__page-navigations">
+                    <div class="b-c-t-page-navigations__left">
+                        <span>Hiển thị <strong>01-20/123</strong> lao động</span>
+                    </div>
+                    <div class="page-navigations">
+                        <div class="page-navigations__returnFirstPage">
+                            <i class="fa-solid fa-angles-left"></i>
+                        </div>
+                        <div class="page-navigations__previousPage">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="page-navigations__page page-navigations__page--focus">1</div>
+                        <div class="page-navigations__page">2</div>
+                        <div class="page-navigations__page">3</div>
+                        <div class="page-navigations__page">4</div>
+                        <div class="page-navigations__previousPage">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="page-navigations__returnFirstPage">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </div>
+                    <div class="b-c-t-page-navigations__right">
+                        <span><strong>20</strong> lao động/trang</span>
+                        <i style="margin-left: 8px;" class="fa-solid fa-sort"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

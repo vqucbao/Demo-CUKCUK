@@ -1,0 +1,44 @@
+
+.combo-box .combo-box__select {
+    display: flex;
+}
+
+.combo-box .combo-box__select .combo-box__select__btn {
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    align-items: center;
+    width: 41px;
+}
+
+.combo-box .combo-box__select input {
+    border-radius: 4px 0 0 4px;
+    margin-top: 0;
+}
+
+.combo-box__list {
+    padding: 4px 0;
+    border-radius: 4px;
+    width: 281px;
+}
+
+.combo-box__list__item {
+    padding-left: 36px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 281px;
+}
+
+.combo-box__list__item:hover {
+    background-color: #bbbbbb;
+}
+
+.combo-box__list__item--select {
+    background-color: #019160;
+    color: #fff;
+}
+
